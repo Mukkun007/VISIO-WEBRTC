@@ -56,8 +56,9 @@ window.addEventListener( 'load', () => {
 
         let roomName = document.querySelector( '#room-name' ).value;
         let yourName = document.querySelector( '#your-name' ).value;
+        let yourMdp = document.querySelector( '#your-mdp' ).value;
 
-        if ( roomName && yourName ) {
+        if ( roomName && yourName && yourMdp == "visiomen007" ) {
             //remove error message, if any
             document.querySelector( '#err-msg' ).innerHTML = "";
 
@@ -74,11 +75,12 @@ window.addEventListener( 'load', () => {
             //empty the values
             document.querySelector( '#room-name' ).value = '';
             document.querySelector( '#your-name' ).value = '';
+            document.querySelector( '#your-mdp' ).value = '';
         }
 
         else {
-            document.querySelector( '#err-msg' ).innerHTML = "Veulliez completer tout les champs s'il vous plait";
-        }
+            document.querySelector( '#err-msg' ).innerHTML = "Mot de passe incorecte";
+        } 
     } );
 
 
