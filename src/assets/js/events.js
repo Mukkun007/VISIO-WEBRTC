@@ -58,7 +58,7 @@ window.addEventListener( 'load', () => {
         let yourName = document.querySelector( '#your-name' ).value;
         let yourMdp = document.querySelector( '#your-mdp' ).value;
 
-        if ( roomName && yourName && yourMdp == "visiomen007" ) {
+        if ( roomName && yourName && yourMdp == "zohainatikobe" ) {
             //remove error message, if any
             document.querySelector( '#err-msg' ).innerHTML = "";
 
